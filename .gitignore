@@ -1,0 +1,32 @@
+/target/
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+.settings/
+.loadpath
+.project
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+.target
+
+# Tern plugin
+.tern-project
+
+# STS (Spring Tool Suite)
+.springBeans
+
+.properties
