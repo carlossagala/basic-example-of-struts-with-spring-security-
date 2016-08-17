@@ -2,7 +2,7 @@ package BO;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
+
 
 import javax.persistence.EntityNotFoundException;
 
@@ -19,8 +19,16 @@ import models.Usuario;
 
 public class UserSecurity implements UserDetailsService {
 
-	UsuarioDao dao = new UsuarioDaoImpl();
+	private UsuarioDao dao;
 	
+	public UsuarioDao getDao() {
+		return dao;
+	}
+
+	public void setDao(UsuarioDao dao) {
+		this.dao = dao;
+	}
+
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
 		 Usuario user = null;
